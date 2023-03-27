@@ -8,4 +8,7 @@
 ## tuần trước đã làm
 -Read and follow tutorial
 
+# Báo cáo tuần 1 - Nguyễn Đức Việt
+-Tiến trình: ổn định
+-Chất lượng: tốt
 
