@@ -23,7 +23,7 @@
 
 # Báo cáo tuần 1 - Nguyễn Đức Việt
 -Tiến trình: ổn định
--Chất lượng: tốt
+-Chất lượng: khá ổn
 
 =======
 -Read and follow tutorial
