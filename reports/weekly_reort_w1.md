@@ -19,7 +19,6 @@
 -Nguyễn Long Thủy
 
 ## tuần trước đã làm
-<<<<<<< HEAD
 -Read and follow tutorial
 
 # Báo cáo tuần 1 - Nguyễn Đức Việt
@@ -28,4 +27,3 @@
 
 =======
 -Read and follow tutorial
->>>>>>> c1eee5fd7e35db6ca2541d7990366a24692bb8ff
