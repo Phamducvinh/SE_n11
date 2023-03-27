@@ -22,11 +22,8 @@
 -Read and follow tutorial
 
 # Báo cáo tuần 1 - Nguyễn Đức Việt
--Tiến trình: ổn định
--Chất lượng: khá ổn
-
-=======
--Read and follow tutorial
+- Tiến trình: ổn định
+- Chất lượng: khá ổn
 
 # báo cáo của 'hải 2 ngón
 - k làm gì
