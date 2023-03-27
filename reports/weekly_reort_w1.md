@@ -25,6 +25,6 @@
 - Tiến trình: ổn định
 - Chất lượng: khá ổn
 
-# báo cáo của 'hải 2 ngón
-- k làm gì
-- lười làm
+# Báo cáo của tuần 1 - Nguyễn Văn Hải
+-Tiến trình: chập chờn
+-Chất lượng: khá
