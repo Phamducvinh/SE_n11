@@ -27,3 +27,7 @@
 
 =======
 -Read and follow tutorial
+
+# báo cáo của 'hải 2 ngón
+- k làm gì
+- lười làm
