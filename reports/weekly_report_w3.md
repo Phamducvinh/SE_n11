@@ -12,3 +12,5 @@
    + Biểu đồ use case tổng quan
    + Biểu đồ use case phân rã
    + Phân rã use case “Khách hàng”
+- Nguyễn Long Thủy
+   + Kiểm tra và sửa code
