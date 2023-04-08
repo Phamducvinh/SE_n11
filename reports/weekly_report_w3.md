@@ -8,4 +8,7 @@
 
 ## Các thành viên trong nhóm trong tuần qua đã làm gì
 - Nhóm trưởng tuần này là: Nguyễn Đức Việt
-
+- Phạm Đức Vinh 
+   + Biểu đồ use case tổng quan
+   + Biểu đồ use case phân rã
+   + Phân rã use case “Khách hàng”
