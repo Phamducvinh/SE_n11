@@ -14,3 +14,6 @@
    + Phân rã use case “Khách hàng”
 - Nguyễn Long Thủy
    + Kiểm tra và sửa code
+- Nguyễn Văn Hải
+   + Làm assignment nhóm
+   + Làm dự án nhóm
