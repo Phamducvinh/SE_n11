@@ -1,5 +1,6 @@
 # Tuần trước nhóm làm
 -Tiếp tục hoàn thiện bài tập nhóm
+-Các thành viên tích cực làm 
 
 ## Vấn đề gặp phải
 -Còn nhiều lỗi khi làm bài tập
