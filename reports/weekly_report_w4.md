@@ -10,3 +10,6 @@
 -Nguyễn Long Thủy, Phạm Đức Vinh:
 + Làm form đăng kí đăng kiểm.
 
+- Nguyễn Đức Việt:
++ Hoàn thiện phần đăng kí, đăng nhập tài khoản
++ Sửa giao diện tin tức 
