@@ -6,5 +6,4 @@
 
 ### Các thành viên trong nhóm đã làm gì.
 -Nhóm trưởng: Nguyễn Văn Hải
-- Phạm Đức vinh
-  + làm form đăng kí đăng kiểm
+
