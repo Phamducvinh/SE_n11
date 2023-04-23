@@ -1,5 +1,6 @@
 # Tuần trước nhóm làm
-Tiếp tục hoàn thiện bài tập lớn 
+Tiếp tục hoàn thiện bài tập lớn
+
 Tập trung thảo luận và tìm hiểu về mô hình MVC
 ## Vấn đề gặp phải
 Thu thập thông tin còn gặp khó khăn
