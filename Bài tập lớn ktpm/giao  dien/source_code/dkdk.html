@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+    
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+<div class="col-md-8" style="padding-bottom: 30px; padding-top: 30px;" id="div-registeredDong">
+    <div id="div_DangKyNgay" style="border-radius: 1.25rem;background-image: linear-gradient(#f0f8ff, #f0f8ff);position: relative;display: flex;flex-direction: column;min-width: 0;word-wrap: break-word;background-clip: border-box;border: 1px solid rgba(0,0,0,.125);color: #fff !important;">
+        <div style="text-align: center !important;flex: 1 1 auto;min-height: 1px;padding: 1.25rem;">
+            <div style="color: #000000!important;margin-bottom: 0 !important;font-size: 20px !important;text-transform:uppercase;" id="btn-Dangkyvay">ĐƠN ĐĂNG KÝ ĐĂNG KIỂM</div>
+            <span style="font-style: italic !important;font-weight: 700 !important;color: #fff !important;">
+            </span>
+            <form id="form-create-customer-carv2" action="/Borrower/RegisterLoanCreditFast" method="post" style="text-align: center !important;color: #fff !important;padding-top: 15px;">
+                <div style="margin-bottom: 1rem;text-align: center !important;color: #fff !important;">
+                    <label for="form-dkvn-name" style="position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;">Họ và tên</label>
+                    <input id="txtFullName_CarV2" name="application_full_name" type="text" placeholder="Họ và tên" style="border: none;height: calc(1.5em + 1rem + 2px);padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .2rem;display: block;width: 100%;font-weight: 400;color: #212529;background-color: #fff;background-clip: padding-box;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;">
+                </div>
+                <div style="margin-bottom: 1rem;text-align: center !important;color: #fff !important;">
+                    <label style="position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;" for="form-dkvn-phonenumber">Số điện thoại</label>
+                    <input style="border: none;height: calc(1.5em + 1rem + 2px);padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .2rem;display: block;width: 100%;font-weight: 400;color: #212529;background-color: #fff;background-clip: padding-box;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;" id="txtPhone_CarV2" name="application_mobile_phone" type="text" placeholder="Số điện thoại">
+                </div>
+                <div class="form-group">
+                    <select style="width: 100% !important;" id="sl_CityId_CarV2" name="CityId" class="custom-select w-100 form-control-default select2-hidden-accessible" onchange="GetDistrictAndSegistry(this.value, '#sl_DistrictId_CarV2')" tabindex="-1" aria-hidden="true">
+                        <option selected="">Khu vực sống hiện tại</option>
+                                <option value="1">Thành phố Hà Nội</option>
+                                <option value="79">Thành phố Hồ Chí Minh</option>
+                                <option value="27">Tỉnh Bắc Ninh</option>
+                                <option value="30">Tỉnh Hải Dương</option>
+                                <option value="26">Tỉnh Vĩnh Phúc</option>
+                                <option value="24">Tỉnh Bắc Giang</option>
+                                <option value="74">Tỉnh Bình Dương</option>
+                                <option value="89">Tỉnh An Giang</option>
+                                <option value="77">Tỉnh Bà Rịa - Vũng Tàu</option>
+                                <option value="6">Tỉnh Bắc Kạn</option>
+                                <option value="95">Tỉnh Bạc Liêu</option>
+                                <option value="83">Tỉnh Bến Tre</option>
+                                <option value="52">Tỉnh Bình Định</option>
+                                <option value="70">Tỉnh Bình Phước</option>
+                                <option value="60">Tỉnh Bình Thuận</option>
+                                <option value="96">Tỉnh Cà Mau</option>
+                                <option value="92">Thành phố Cần Thơ</option>
+                                <option value="4">Tỉnh Cao Bằng</option>
+                                <option value="48">Thành phố Đà Nẵng</option>
+                                <option value="66">Tỉnh Đắk Lắk</option>
+                                <option value="67">Tỉnh Đắk Nông</option>
+                                <option value="11">Tỉnh Điện Biên</option>
+                                <option value="75">Tỉnh Đồng Nai</option>
+                                <option value="87">Tỉnh Đồng Tháp</option>
+                                <option value="64">Tỉnh Gia Lai</option>
+                                <option value="2">Tỉnh Hà Giang</option>
+                                <option value="35">Tỉnh Hà Nam</option>
+                                <option value="42">Tỉnh Hà Tĩnh</option>
+                                <option value="31">Thành phố Hải Phòng</option>
+                                <option value="93">Tỉnh Hậu Giang</option>
+                                <option value="17">Tỉnh Hòa Bình</option>
+                                <option value="33">Tỉnh Hưng Yên</option>
+                                <option value="56">Tỉnh Khánh Hòa</option>
+                                <option value="91">Tỉnh Kiên Giang</option>
+                                <option value="62">Tỉnh Kon Tum</option>
+                                <option value="12">Tỉnh Lai Châu</option>
+                                <option value="68">Tỉnh Lâm Đồng</option>
+                                <option value="20">Tỉnh Lạng Sơn</option>
+                                <option value="10">Tỉnh Lào Cai</option>
+                                <option value="80">Tỉnh Long An</option>
+                                <option value="36">Tỉnh Nam Định</option>
+                                <option value="40">Tỉnh Nghệ An</option>
+                                <option value="37">Tỉnh Ninh Bình</option>
+                                <option value="58">Tỉnh Ninh Thuận</option>
+                                <option value="25">Tỉnh Phú Thọ</option>
+                                <option value="54">Tỉnh Phú Yên</option>
+                                <option value="44">Tỉnh Quảng Bình</option>
+                                <option value="49">Tỉnh Quảng Nam</option>
+                                <option value="51">Tỉnh Quảng Ngãi</option>
+                                <option value="22">Tỉnh Quảng Ninh</option>
+                                <option value="45">Tỉnh Quảng Trị</option>
+                                <option value="94">Tỉnh Sóc Trăng</option>
+                                <option value="14">Tỉnh Sơn La</option>
+                                <option value="72">Tỉnh Tây Ninh</option>
+                                <option value="34">Tỉnh Thái Bình</option>
+                                <option value="19">Tỉnh Thái Nguyên</option>
+                                <option value="38">Tỉnh Thanh Hóa</option>
+                                <option value="46">Tỉnh Thừa Thiên Huế</option>
+                                <option value="82">Tỉnh Tiền Giang</option>
+                                <option value="84">Tỉnh Trà Vinh</option>
+                                <option value="8">Tỉnh Tuyên Quang</option>
+                                <option value="86">Tỉnh Vĩnh Long</option>
+                                <option value="15">Tỉnh Yên Bái</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-sl_CityId_CarV2-container"><span class="select2-selection__rendered" id="select2-sl_CityId_CarV2-container" title="Khu vực sống hiện tại">Khu vực sống hiện tại</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="form-group">
+                    <input id="txtquanhuyen" type="text" placeholder="Quận Huyện" style="border: none;height: calc(1.25em + 1rem + 2px);padding: .5rem 1rem;font-size: 1rem;line-height: 1.25;border-radius: .2rem;display: block;width: 100%;font-weight: 400;color: #212529;background-color: #fff;background-clip: padding-box;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;">
+                    </div>
+                <div style="margin-bottom: 1rem;text-align: center !important;color: #fff !important;">
+                    <label style="position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;" for="form-dkvn-phonenumber">Số điện thoại</label>
+                    <input style="border: none;height: calc(1.5em + 1rem + 2px);padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .2rem;display: block;width: 100%;font-weight: 400;color: #212529;background-color: #fff;background-clip: padding-box;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;" type="text" placeholder="Biển số">
+                </div>
+                <div class="form-group">
+                    <select style="width: 100% !important;" class="custom-select w-100 form-control-default select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                        <option selected="">Màu biển số</option>
+                        <option value="1">Màu trắng</option>
+                        <option value="2">Màu vàng</option>
+                         <option value="3">Màu xanh</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-pei2-container"><span class="select2-selection__rendered" id="select2-pei2-container" title="Màu biển số">Màu biển số</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="form-group">
+                    <select style="width: 100% !important;" class="custom-select w-100 form-control-default select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                        <option selected="">Loại xe</option>
+                        <option value="1">Xe con</option>
+                        <option value="2">Khác</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-g8wq-container"><span class="select2-selection__rendered" id="select2-g8wq-container" title="Loại xe">Loại xe</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="form-group">
+                    <select style="width: 100% !important;" class="custom-select w-100 form-control-default select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                        <option selected="">Xe</option>
+                        <option value="1">Kinh doanh</option>
+                        <option value="2">Hộ gia đình</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-ctgr-container"><span class="select2-selection__rendered" id="select2-ctgr-container" title="Xe">Xe</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div style="margin-bottom: 1rem;text-align: center !important;color: #fff !important;">
+                    <label style="position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0,0,0,0);white-space: nowrap;border: 0;" for="form-dkvn-phonenumber">Số điện thoại</label>
+                    <input style="border: none;height: calc(1.5em + 1rem + 2px);padding: .5rem 1rem;font-size: 1.25rem;line-height: 1.5;border-radius: .2rem;display: block;width: 100%;font-weight: 400;color: #212529;background-color: #fff;background-clip: padding-box;transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;" type="date" placeholder="Ngày hết hạn" id="txtDateSegistry">
+                </div>
+                <div class="form-group">
+                    <select style="width: 100% !important;" class="custom-select w-100 form-control-default select2-hidden-accessible" id="sl_Segistry" placeholder="Trung tâm đăng kiểm" tabindex="-1" aria-hidden="true">
+                        <option selected="">Trung tâm đăng kiểm</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-sl_Segistry-container"><span class="select2-selection__rendered" id="select2-sl_Segistry-container" title="Trung tâm đăng kiểm">Trung tâm đăng kiểm</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <label id="txt-error_carv2" style="font-size:20px;display: none;" class="error-phone" for="txtfullname">Bạn chưa chọn gói vay!</label>
+                <div class="form-group text-center mb-0 pt-1">
+                    <button class="btn btn-lg btn-secondary font-weight-bold" type="button" id="btn_SubmitCarV2" style="cursor: pointer;font-weight: 700 !important;color: #212529;background-color: #fcff00;border-color: #fcff00;">KIỂM TRA <i id="_btn_kiemtra_loading_carv2"></i></button>
+                </div>
+                <input type="hidden" name="UsertAgent" id="hdd_UsertAgent_CarV2" value="">
+                <input type="hidden" name="IsApply" id="hdd_IsApply_CarV2" value="">
+                <input type="hidden" name="ProvinceName" id="hdd_ProvinceName_CarV2" value="">
+                <input type="hidden" name="DistrictName" id="hdd_DistrictName_CarV2" value="">
+                <input type="hidden" name="product_id" id="hdd_ProductId_CarV2" value="8">
+            </form>
+        </div>
+    </div>
+</div>

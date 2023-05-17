@@ -30,6 +30,7 @@
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 20px;
   }
   
   button:hover {
@@ -42,10 +43,7 @@
     font-size: 50px;
     
   }
-  .site-navbar-wrap .site-navbar .site-logo2 a {
-    font-family: "Playfair Display";
-    color: #000000; 
-  }
+  
   .site-navbar-wrap .site-navbar .site-navigation .site-menu > li > a {
     color: rgba(255, 255, 255, 0.6);
     font-size: 15px; 

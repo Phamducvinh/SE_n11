@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Đăng kiểm xe trực tuyến</title>
+		<link rel="icon" href="images/favicon.png">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Work+Sans:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/icomoon/style.css">
+	
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="css/jquery-ui.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+		<link rel="stylesheet" href="css/animate.css">
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
+		
+		<link rel="stylesheet" href="css/datlich.css">
+		
+		<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	  
+		<link rel="stylesheet" href="css/aos.css">
+	
+		<link rel="stylesheet" href="css/style.css">
+		
+	  </head>
+	  <body>
+	  
+	  <div class="site-wrap">
+	
+		<div class="site-mobile-menu">
+		  <div class="site-mobile-menu-header">
+			<div class="site-mobile-menu-close mt-3">
+			  <span class="icon-close2 js-menu-toggle"></span>
+			</div>
+		  </div>
+		  <div class="site-mobile-menu-body"></div>
+		</div> <!-- .site-mobile-menu -->
+		
+		
+		<div class="site-navbar-wrap js-site-navbar bg-white">
+		  
+		  <div class="container">
+			<div class="site-navbar bg-light">
+			  <div class="py-1">
+				<div class="row align-items-center">
+				  <div class="col-2">
+					<h2 class="mb-0 site-logo"><a href="index.html">OTO REGISTRY</a></h2>
+				  </div>
+				  <div class="col-10">
+					<nav class="site-navigation text-right" role="navigation">
+					  <div class="container">
+						
+						<div class="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
+						<ul class="site-menu js-clone-nav d-none d-lg-block">
+						  <li>
+							<a href="index.html">Trang chủ</a>
+						  </li>
+						  <li class="has-children">
+							<a href="rooms.html">Trung tâm đăng kiểm</a>
+							<ul class="dropdown arrow-top">
+							  <li><a href="location.html">Địa điểm lân cận</a></li>
+							  <li class="has-children">
+								<a href="location.html">Dịch vụ</a>
+								<ul class="dropdown">
+									<li><a href="datlich.html">Đặt lịch</a></li> 
+									<li><a href="location.html">Nhân viên phục vụ tại nhà</a></li>
+									<li><a href="checkout.html">Thanh toán</a></li>
+								  </ul>
+							  </li>
+	
+							</ul>
+						  </li>
+						  <li class="active"><a href="about.html">Đặt lịch</a></li>
+						  <li><a href="contact.html">Liên hệ</a></li>
+						</ul>
+					  </div>
+					</nav>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		<div class="site-blocks-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+			<div class="container">
+			  <div class="row align-items-center justify-content-center">
+				<div class="col-md-7 text-center" data-aos="fade">
+				  
+				  <h1 class="mb-4">Đặt lịch đăng kiểm trực tuyến</h1>
+				</div>
+			  </div>
+			</div>
+		  </div>  
+	<div>
+		
+	<form>
+		<label for="name">Họ tên:</label>
+		<input type="text" id="name" name="name" required>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		<label for="phone">Số điện thoại:</label>
+		<input type="tel" id="phone" name="phone" required>
+		<label for="licensePlate">Biển số xe:</label>
+		<input type="text" id="licensePlate" name="licensePlate" required>
+        <label for="licensePlateColor">Màu biển số xe:</label>
+        <div class = "checkbox-group">
+			<div class="custom-control custom-radio">
+				<input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
+					value="1">
+				<label class="custom-control-label" for="httt-1" ><span class="white">Trắng</span></label>
+			</div>
+			<div class="custom-control custom-radio">
+				<input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
+					value="2">
+				<label class="custom-control-label" for="httt-2" ><span class="blue">Xanh</span></label>
+			</div>
+            <div class="custom-control custom-radio">
+				<input id="httt-3" name="httt_ma" type="radio" class="custom-control-input" required=""
+					value="3">
+				<label class="custom-control-label" for="httt-3" ><span class="yellow">Vàng</span></label>
+			</div>
+			<div class="custom-control custom-radio">
+				<input id="httt-4" name="httt_ma" type="radio" class="custom-control-input" required=""
+					value="4">
+				<label class="custom-control-label" for="httt-4" ><span class="red">Đỏ</span></label>
+			</div>
+        </div>
+       
+		<label for="expirationDate">Ngày hết hạn đăng kiểm:</label>
+		<input type="date" id="expirationDate" name="expirationDate" required placeholder = "">
+		<label for="vehicleType">Loại phương tiện:</label>
+		<select id="vehicleType" name="vehicleType">
+			<option value="oto">Ô tô</option>
+			<option value="other">Phương tiện khác</option>
+		</select>
+		<label for="expirationDate">Ngày hẹn:</label>
+		<input type="date" id="expirationDate" name="expirationDate" required placeholder = "">
+		<label for="vehicleType">Địa điểm:</label>
+		<select id="vehicleType" name="vehicleType">
+			<option>TTDK XCG 2901S - Hà Nội</option>
+			<option>TTDK XCG 2901V - Hà Nội</option>
+			<option>TTDK XCG 2902V - Hà Nội</option>
+			<option>TTDK XCG 29-05V - Hà Nội</option>
+			<option>TTDK XCG 2906V - Hà Nội</option>
+			<option>TTDK XCG 2912D - Hà Nội</option>
+		</select>
+		<div class="row form-group">
+			<div class="col-md-12">
+			  <input type="submit" value="Đặt lịch" class="btn btn-primary pill px-4 py-2">
+			</div>
+		</div>
+	</form>
+	</div>
+
+	<footer class="site-footer">
+		<div class="container">
+		  
+  
+		  <div class="row">
+			<div class="col-md-4">
+			  <h3 class="footer-heading mb-4 text-white">About</h3>
+			  <p>Sự hài lòng của quý khách luôn là niềm động lực để chúng tôi tiếp tục phát triển </p>
+			  <p><a href="#" class="btn btn-primary pill text-white px-4">Read More</a></p>
+			</div>
+			<div class="col-md-6">
+			  <div class="row">
+				<div class="col-md-6">
+				  <h3 class="footer-heading mb-4 text-white">Dịch vụ</h3>
+					<ul class="list-unstyled">
+					  <li><a href="#">Các trung tâm đăng kiểm</a></li>
+					  <li><a href="#">Đăng kí xe</a></li>
+					  <li><a href="#">Đặt lịch</a></li>
+					  <li><a href="#">Thanh toán</a></li>
+					  <li><a href="#">Tin tức</a></li>
+					  <li><a href="#">Chăm sóc khách hàng</a></li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+				  <h3 class="footer-heading mb-4 text-white">Chính sách</h3>
+					<ul class="list-unstyled">
+					  <li><a href="#">Quy định chung</a></li>
+					  <li><a href="#">Chính sách bảo mật thông tin</a></li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+  
+			
+			<div class="col-md-2">
+			  <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
+				<div class="col-md-12">
+				  <p>
+					<a href="#" class="pb-2 pr-2 pl-0"><span class="icon-facebook"></span></a>
+					<a href="#" class="p-2"><span class="icon-twitter"></span></a>
+					<a href="#" class="p-2"><span class="icon-instagram"></span></a>
+					<a href="#" class="p-2"><span class="icon-vimeo"></span></a>
+  
+				  </p>
+				</div>
+			</div>
+		  </div>
+		  <div class="row pt-5 mt-5 text-center">
+			<div class="col-md-12">
+			  <p>
+			  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template is made with <i class="icon-heart text-primary" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Group 5-N11</a>
+			  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			  </p>
+			</div>
+			
+		  </div>
+		</div>
+	  </footer>
+	
+
+	<script>
+	document.querySelector('.btn-primary').addEventListener('click', function() {
+		alert('Đặt lịch thành công!');
+	});
+	</script>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="js/aos.js"></script>
+  
+	
+	<script src="js/mediaelement-and-player.min.js"></script>
+  
+	<script src="js/main.js"></script>
+	
+</body>
+</html>

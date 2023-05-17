@@ -70,9 +70,9 @@ a {
     -webkit-box-shadow: none !important;
     box-shadow: none !important; }
   .btn.btn-secondary {
-    background-color: #e6e7e9;
+    background-color:#f23a2e;
     border-color: #e6e7e9;
-    color: #000; }
+    color: #fef9f9; }
   .btn.btn-sm {
     font-size: 0.9rem; }
   .btn:hover {
@@ -92,7 +92,7 @@ a {
   background: #000; }
 
 .form-control {
-  height: 47px; }
+  height: 36px; }
   .form-control:active, .form-control:focus {
     border-color: #f23a2e; }
   .form-control:hover, .form-control:active, .form-control:focus {
@@ -1379,7 +1379,8 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  background: #fff; }
+  background: #fff; 
+  height: 450px}
   .hotel-room .heading {
     font-size: 20px;
     text-transform: uppercase; }
@@ -1427,3 +1428,30 @@ a {
   cursor: zoom-in; }
   .img-opacity:hover img {
     opacity: .5; }
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+.my-btn:hover {
+  background-color: #da2400f7;
+}
+
+.map-container {
+  margin-top: 30px;
+  border: 1px solid #ccc; /* Thêm viền cho khung iframe */
+  border-radius: 5px;
+  overflow: hidden; /* Ẩn phần dư thừa của iframe */
+}
+
+iframe {
+  width: 80%;
+  height: 500px;
+  margin-bottom: 20px;
+}

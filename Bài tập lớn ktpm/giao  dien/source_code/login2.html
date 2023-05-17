@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<ht lang="en">
+
+<html>
 <head>
     <title>OTO-REGISTRY</title>
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/login2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -41,62 +43,62 @@
         </div>
         <div class="login-section">
             <div class="form-box login">
-                <form action="">
-                    <h2>Sign In</h2>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-envelope'></i></span>
-                        <input type="email" required>
-                        <label >Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" required>
-                        <label>Password</label>
-                    </div>
-                    <div class="remember-password">
-                        <label for=""><input type="checkbox">Remember Me</label>
-                        <a href="#">Forget Password</a>
-                    </div>
-                    <button class="btn"> <a href="index.html" style="text-decoration: none;" >Log in</a></button>
-                    <div class="create-account">
-                        <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
-                    </div>
-                </form>
+              <form action="">
+                <h2>Sign In</h2>
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-envelope'></i></span>
+                  <input type="email" required>
+                  <label>Email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                  <input type="password" required>
+                  <label>Password</label>
+                </div>
+                <div class="remember-password">
+                  <label for=""><input type="checkbox">Remember Me</label>
+                  <a href="#">Forget Password</a>
+                </div>
+                <button class="btn">Log in</button>
+                <div class="create-account">
+                  <p>Create A New Account? <a href="#" class="register-link">Sign Up</a></p>
+                </div>
+              </form>
             </div>
             <div class="form-box register">
-                <form action="register.php" method="post"> <!-- Thêm method="post" để gửi dữ liệu bằng phương thức POST -->
-                  <h2>Sign Up</h2>
-              
-                  <div class="input-box">
-                    <span class="icon"><i class='bx bxs-user'></i></span>
-                    <input type="text" name="username" required> <!-- Thêm thuộc tính name -->
-                    <label>Username</label>
-                  </div>
-                  <div class="input-box">
-                    <span class="icon"><i class='bx bxs-envelope'></i></span>
-                    <input type="email" name="email" required> <!-- Thêm thuộc tính name -->
-                    <label>Email</label>
-                  </div>
-                  <div class="input-box">
-                    <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                    <input type="password" name="password" required> <!-- Thêm thuộc tính name -->
-                    <label>Password</label>
-                  </div>
-                  <div class="remember-password">
-                    <label for=""><input type="checkbox" name="agree" required>I agree with this statement</label> <!-- Thêm thuộc tính name và required -->
-                  </div>
-                  <button type="submit" class="btn">Sign up</button> <!-- Thay thế thẻ a bằng thẻ button và thêm type="submit" -->
-                  <div class="create-account">
-                    <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
-                  </div>
-                </form>
-              </div>
-        </div>
+              <form action="https://sheetdb.io/api/v1/q21zrespzd8tq" method="POST"> <!-- Update action and add method -->
+                <h2>Sign Up</h2>
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-user'></i></span>
+                  <input type="text" name="username" required>
+                  <label>Username</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-envelope'></i></span>
+                  <input type="email" name="email" required>
+                  <label>Email</label>
+                </div>
+                <div class="input-box">
+                  <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                  <input type="password" name="password" required>
+                  <label>Password</label>
+                </div>
+                <div class="remember-password">
+                  <label for=""><input type="checkbox" name="agree" required>I agree with this statement</label>
+                </div>
+                <button type="submit" class="btn">Sign up</button>
+                <div class="create-account">
+                  <p>Already Have An Account? <a href="#" class="login-link">Sign In</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+          
     </div>
      <!-- SIGN UP FORM CREATION -->
 
     <script src="js\login2.js"></script>
     
 </body>
+</html>
 
-</ht>

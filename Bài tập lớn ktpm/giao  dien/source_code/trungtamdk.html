@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Tìm nơi đăng kiểm xe hơi</title>
+</head>
+
+<body>
+    <h1>Tìm nơi đăng kiểm xe hơi xung quanh vị trí của bạn</h1>
+    <p>Nhấn vào nút bên dưới để tìm kiếm các nơi đăng kiểm xe hơi trên Google Maps</p>
+    <button onclick="searchDangKiem()">Tìm nơi đăng kiểm xe hơi</button>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d187863.20989221818!2d105.69096793516594!3d20.987643693772558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zxJHEg25nIGtp4buDbSDDtCB0w7Qg!5e0!3m2!1svi!2s!4v1681303103611!5m2!1svi!2s"
+        width="100%" height="440px" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script>
+        function searchDangKiem() {
+            // Kiểm tra xem trình duyệt có hỗ trợ Geolocation hay không
+            if (navigator.geolocation) {
+                // Lấy vị trí hiện tại của người dùng
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+                    var url = "https://www.google.com/maps/search/dang+kiem+xe+hơi/@" + lat + "," + lon + ",13z";
+                    window.open(url, '_blank');
+                });
+            } else {
+                alert("Trình duyệt của bạn không hỗ trợ Geolocation");
+            }
+            function initMap() {
+                // Tạo một đối tượng bản đồ Google Maps mới
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 8, // Kích thước zoom của bản đồ (từ 0-20)
+                    center: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE } // Vị trí trung tâm của bản đồ
+                });
+
+                // Tạo một đối tượng đánh dấu vị trí của bạn trên bản đồ
+                var marker = new google.maps.Marker({
+                    position: { lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE },
+                    map: map,
+                    title: 'Vị trí của bạn'
+                });
+            }
+
+            // Gọi hàm initMap để tạo bản đồ khi trang web được tải
+            initMap();
+
+        }
+    </script>
+</body>
+
+</html>
