@@ -60,22 +60,25 @@
 						  <li>
 							<a href="index.html">Trang chủ</a>
 						  </li>
-						  <li class="has-children">
-							<a href="rooms.html">Trung tâm đăng kiểm</a>
+						  <li class="has-children active">
+							<a>Trung tâm đăng kiểm</a>
 							<ul class="dropdown arrow-top">
+							  
 							  <li><a href="location.html">Địa điểm lân cận</a></li>
+							  
 							  <li class="has-children">
 								<a href="location.html">Dịch vụ</a>
 								<ul class="dropdown">
-									<li><a href="datlich.html">Đặt lịch</a></li> 
-									<li><a href="location.html">Nhân viên phục vụ tại nhà</a></li>
-									<li><a href="checkout.html">Thanh toán</a></li>
-								  </ul>
+								  <li><a href="datlich.html">Đặt lịch</a></li> 
+								  <li><a href="location.html">Nhân viên phục vụ tại nhà</a></li>
+								  <li><a href="checkout.html">Thanh toán</a></li>
+								</ul>
+								
 							  </li>
-	
+							  
 							</ul>
 						  </li>
-						  <li class="active"><a href="about.html">Đặt lịch</a></li>
+						  <li><a href="dkixe.html">Đăng kí xe</a></li>
 						  <li><a href="contact.html">Liên hệ</a></li>
 						</ul>
 					  </div>
@@ -99,63 +102,68 @@
 		  </div>  
 	<div>
 		
-	<form>
-		<label for="name">Họ tên:</label>
-		<input type="text" id="name" name="name" required>
-		<label for="email">Email:</label>
-		<input type="email" id="email" name="email" required>
-		<label for="phone">Số điện thoại:</label>
-		<input type="tel" id="phone" name="phone" required>
-		<label for="licensePlate">Biển số xe:</label>
-		<input type="text" id="licensePlate" name="licensePlate" required>
-        <label for="licensePlateColor">Màu biển số xe:</label>
-        <div class = "checkbox-group">
-			<div class="custom-control custom-radio">
-				<input id="httt-1" name="httt_ma" type="radio" class="custom-control-input" required=""
-					value="1">
-				<label class="custom-control-label" for="httt-1" ><span class="white">Trắng</span></label>
+		<form id="bookingForm">
+			<label for="bookingName">Họ tên:</label>
+			<input type="text" id="bookingName" name="bookingName" required>
+			
+			<label for="bookingEmail">Email:</label>
+			<input type="email" id="bookingEmail" name="bookingEmail" required>
+			
+			<label for="bookingPhone">Số điện thoại:</label>
+			<input type="tel" id="bookingPhone" name="bookingPhone" required>
+			
+			<label for="bookingLicensePlate">Biển số xe:</label>
+			<input type="text" id="bookingLicensePlate" name="bookingLicensePlate" required>
+			
+			<label for="bookingLicensePlateColor">Màu biển số xe:</label>
+			<div class="checkbox-group">
+				<div class="custom-control custom-radio">
+					<input id="bookingHttt-1" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="1">
+					<label class="custom-control-label" for="bookingHttt-1"><span class="white">Trắng</span></label>
+				</div>
+				<div class="custom-control custom-radio">
+					<input id="bookingHttt-2" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="2">
+					<label class="custom-control-label" for="bookingHttt-2"><span class="blue">Xanh</span></label>
+				</div>
+				<div class="custom-control custom-radio">
+					<input id="bookingHttt-3" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="3">
+					<label class="custom-control-label" for="bookingHttt-3"><span class="yellow">Vàng</span></label>
+				</div>
+				<div class="custom-control custom-radio">
+					<input id="bookingHttt-4" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="4">
+					<label class="custom-control-label" for="bookingHttt-4"><span class="red">Đỏ</span></label>
+				</div>
 			</div>
-			<div class="custom-control custom-radio">
-				<input id="httt-2" name="httt_ma" type="radio" class="custom-control-input" required=""
-					value="2">
-				<label class="custom-control-label" for="httt-2" ><span class="blue">Xanh</span></label>
+		
+			<label for="bookingExpirationDate">Ngày hết hạn đăng kiểm:</label>
+			<input type="date" id="bookingExpirationDate" name="bookingExpirationDate" required placeholder="">
+		
+			<label for="bookingVehicleType">Loại phương tiện:</label>
+			<select id="bookingVehicleType" name="bookingVehicleType">
+				<option value="oto">Ô tô</option>
+				<option value="other">Phương tiện khác</option>
+			</select>
+		
+			<label for="bookingAppointmentDate">Ngày hẹn:</label>
+			<input type="date" id="bookingAppointmentDate" name="bookingAppointmentDate" required placeholder="">
+		
+			<label for="bookingLocation">Địa điểm:</label>
+			<select id="bookingLocation" name="bookingLocation">
+				<option>TTDK XCG 2901S - Hà Nội</option>
+				<option>TTDK XCG 2901V - Hà Nội</option>
+				<option>TTDK XCG 2902V - Hà Nội</option>
+				<option>TTDK XCG 29-05V - Hà Nội</option>
+				<option>TTDK XCG 2906V - Hà Nội</option>
+				<option>TTDK XCG 2912D - Hà Nội</option>
+			</select>
+		
+			<div class="row form-group">
+				<div class="col-md-12">
+					<input type="submit" value="Đặt lịch" class="btn btn-primary pill px-4 py-2">
+				</div>
 			</div>
-            <div class="custom-control custom-radio">
-				<input id="httt-3" name="httt_ma" type="radio" class="custom-control-input" required=""
-					value="3">
-				<label class="custom-control-label" for="httt-3" ><span class="yellow">Vàng</span></label>
-			</div>
-			<div class="custom-control custom-radio">
-				<input id="httt-4" name="httt_ma" type="radio" class="custom-control-input" required=""
-					value="4">
-				<label class="custom-control-label" for="httt-4" ><span class="red">Đỏ</span></label>
-			</div>
-        </div>
-       
-		<label for="expirationDate">Ngày hết hạn đăng kiểm:</label>
-		<input type="date" id="expirationDate" name="expirationDate" required placeholder = "">
-		<label for="vehicleType">Loại phương tiện:</label>
-		<select id="vehicleType" name="vehicleType">
-			<option value="oto">Ô tô</option>
-			<option value="other">Phương tiện khác</option>
-		</select>
-		<label for="expirationDate">Ngày hẹn:</label>
-		<input type="date" id="expirationDate" name="expirationDate" required placeholder = "">
-		<label for="vehicleType">Địa điểm:</label>
-		<select id="vehicleType" name="vehicleType">
-			<option>TTDK XCG 2901S - Hà Nội</option>
-			<option>TTDK XCG 2901V - Hà Nội</option>
-			<option>TTDK XCG 2902V - Hà Nội</option>
-			<option>TTDK XCG 29-05V - Hà Nội</option>
-			<option>TTDK XCG 2906V - Hà Nội</option>
-			<option>TTDK XCG 2912D - Hà Nội</option>
-		</select>
-		<div class="row form-group">
-			<div class="col-md-12">
-			  <input type="submit" value="Đặt lịch" class="btn btn-primary pill px-4 py-2">
-			</div>
-		</div>
-	</form>
+		</form>
+		
 	</div>
 
 	<footer class="site-footer">
@@ -219,11 +227,29 @@
 	  </footer>
 	
 
-	<script>
-	document.querySelector('.btn-primary').addEventListener('click', function() {
-		alert('Đặt lịch thành công!');
-	});
+	
+	  <script>
+		// Lắng nghe sự kiện khi người dùng bấm nút Đặt lịch
+		document.querySelector('input[type="submit"]').addEventListener('click', function(event) {
+			event.preventDefault(); // Ngăn chặn việc gửi form đi mặc định
+	
+			// Kiểm tra các trường thông tin
+			var name = document.getElementById('bookingName').value;
+			var email = document.getElementById('bookingEmail').value;
+			var phone = document.getElementById('bookingPhone').value;
+			var licensePlate = document.getElementById('bookingLicensePlate').value;
+			var licensePlateColor = document.querySelector('input[name="bookingHtttMa"]:checked');
+			var expirationDate = document.getElementById('bookingExpirationDate').value;
+	
+			// Kiểm tra xem có trường thông tin nào chưa được nhập
+			if (name === '' || email === '' || phone === '' || licensePlate === '' || licensePlateColor === null || expirationDate === '') {
+				alert('Vui lòng nhập đầy đủ thông tin.'); // Hiển thị thông báo
+			} else {
+				alert('Đặt lịch thành công!'); // Hiển thị thông báo đặt lịch thành công
+			}
+		});
 	</script>
+	
 
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
