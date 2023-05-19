@@ -144,18 +144,104 @@
 				<option value="other">Phương tiện khác</option>
 			</select>
 		
+			<label for="area">Khu vực:</label>
+<select id="area" name="area">
+    <option value="Hanoi">Hà Nội</option>
+    <option value="CaoBang">Cao Bằng</option>
+    <option value="LangSon">Lạng Sơn</option>
+    <option value="QuangNinh">Quảng Ninh</option>
+    <option value="HaiPhong">Hải Phòng</option>
+    <option value="ThaiBinh">Thái Bình</option>
+    <option value="NamDinh">Nam Định</option>
+    <option value="PhuTho">Phú Thọ</option>
+    <option value="ThaiNguyen">Thái Nguyên</option>
+    <option value="HaGiang">Hà Giang</option>
+    <option value="TuyenQuang">Tuyên Quang</option>
+    <option value="DaNang">Đà Nẵng</option>
+    <option value="LaiChau">Lai Châu</option>
+    <option value="SonLa">Sơn La</option>
+    <option value="DienBien">Điện Biên</option>
+</select>
+
+<label for="station">Chọn trạm:</label>
+<select id="station" name="station"></select>
+
+<script>
+    // Lấy tham chiếu đến các phần tử select
+    var areaSelect = document.getElementById("area");
+    var stationSelect = document.getElementById("station");
+
+    // Sự kiện thay đổi khu vực
+    areaSelect.addEventListener("change", function() {
+        var selectedArea = areaSelect.value;
+
+        // Xóa các tùy chọn trạm hiện tại
+        stationSelect.innerHTML = "";
+
+        // Tạo các tùy chọn trạm mới dựa trên khu vực đã chọn
+        if (selectedArea === "Hanoi") {
+            addOption("TTDK XCG 2901S - Hà Nội");
+            addOption("TTDK XCG 2901V - Hà Nội");
+            addOption("TTDK XCG 2902V - Hà Nội");
+            addOption("TTDK XCG 29-05V - Hà Nội");
+            addOption("TTDK XCG 2906V - Hà Nội");
+            addOption("TTDK XCG 2912D - Hà Nội");
+        } else if (selectedArea === "CaoBang") {
+            addOption("TTDK XCG 1101S - Cao Bằng");
+            addOption("TTDK XCG 1102D - Cao Bằng 22");
+        } else if (selectedArea === "LangSon") {
+            addOption("TTDK XCG 1201D - Lạng Sơn");
+            addOption("TTDK XCG 1202D - Lạng Sơn");
+        } else if (selectedArea === "QuangNinh") {
+            addOption("TTDK XCG 1401D - Quảng Ninh");
+            addOption("TTDK XCG 1402D - Quảng Ninh");
+            addOption("TTDK XCG 1407D - Quảng Ninh");
+        } else if (selectedArea === "NamDinh") {
+            addOption("TTDK XCG 1801S - Nam Định");
+            addOption("TTDK XCG 1802D - Nam Định");
+            addOption("TTDK XCG 1802S - Nam Định");
+        } else if (selectedArea === "ThaiBinh") {
+            addOption("TTDK XCG 1701D - Thái Bình");
+            addOption("TTDK XCG 1702D - Thái Bình");
+        } else if (selectedArea === "HaiPhong") {
+            addOption("TTDK XCG 1507D - Hải Phòng");
+            addOption("TTDK XCG 1509D - Hải Phòng");
+            addOption("TTDK XCG 1506D - Hải Phòng");
+        } else if (selectedArea === "PhuTho") {
+            addOption("TTDK XCG 1901V - Phú Thọ");
+            addOption("TTDK XCG 1902D - Phú Thọ");
+            addOption("TTDK XCG 1905D - Phú Thọ");
+        } else if (selectedArea === "ThaiNguyen") {
+            addOption("TTDK XCG 2001S - Thái Nguyên");
+            addOption("TTDK XCG 2002S - Thái Nguyên");
+            addOption("TTDK XCG 2003D - Thái Nguyên");
+        } else if (selectedArea === "TuyenQuang") {
+            addOption("TTDK XCG 2201S - Tuyên Quang");
+        } else if (selectedArea === "HaGiang") {
+            addOption("TTDK XCG 2301S - Hà Giang");
+        } else if (selectedArea === "LaiChau") {
+            addOption("TTDK XCG 2501S - Lai Châu");
+        }
+        // Thêm các điều kiện khác cho các khu vực khác
+
+        // Hàm thêm tùy chọn trạm
+        function addOption(text) {
+            var option = document.createElement("option");
+            option.text = text;
+            stationSelect.add(option);
+        }
+    });
+</script>
+
 			<label for="bookingAppointmentDate">Ngày hẹn:</label>
 			<input type="date" id="bookingAppointmentDate" name="bookingAppointmentDate" required placeholder="">
 		
-			<label for="bookingLocation">Địa điểm:</label>
-			<select id="bookingLocation" name="bookingLocation">
-				<option>TTDK XCG 2901S - Hà Nội</option>
-				<option>TTDK XCG 2901V - Hà Nội</option>
-				<option>TTDK XCG 2902V - Hà Nội</option>
-				<option>TTDK XCG 29-05V - Hà Nội</option>
-				<option>TTDK XCG 2906V - Hà Nội</option>
-				<option>TTDK XCG 2912D - Hà Nội</option>
-			</select>
+			<label for="appointmentTime">Giờ hẹn:</label>
+			<input type="time" id="appointmentTime" name="appointmentTime" required placeholder="">
+		
+
+			
+
 		
 			<div class="row form-group">
 				<div class="col-md-12">
