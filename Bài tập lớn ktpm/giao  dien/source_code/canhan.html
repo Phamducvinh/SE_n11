@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  
+</head>
+<body>
+  
+
+    <div class="container">
+      <h1>Welcome, <span id="username"></span>!</h1>
+      <p>Email: <span id="email"></span></p>
+      <li><a href="datlich.html">Đặt lịch</a></li>
+      <li><a href="contact.html">Liên hệ</a></li>
+    </div>
+
+    <script>
+        // Function to fetch user data from SheetDB
+        function fetchUserData(username) {
+        var url = 'https://sheetdb.io/api/v1/q21zrespzd8tq?username=' + username + '&sort=ID&dir=desc&limit=1';
+
+        return fetch(url)
+          .then(response => response.json())
+          .then(data => data[0]) // Assuming the API returns an array with a single user object
+          .catch(error => {
+            console.error('Error:', error);
+          });
+      }
+        // Function to display user data on the page
+        function displayUserData(userData) {
+          var usernameElement = document.getElementById('username');
+          var emailElement = document.getElementById('email');
+      
+          if (userData) {
+            usernameElement.textContent = userData.username;
+            emailElement.textContent = userData.email;
+            // Add more fields as needed
+          } else {
+            usernameElement.textContent = 'User not found.';
+          }
+        }
+      
+        // Get the username from the query string
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        var username = urlParams.get('username');
+      
+        // Fetch and display user data
+        fetchUserData(username)
+          .then(userData => {
+            displayUserData(userData);
+          });
+      </script>
+      
+      
+      
+    
+  </body>
+</html>
