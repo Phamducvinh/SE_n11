@@ -259,7 +259,43 @@
       </div>
       
       </footer>
-    <script src="js/jquery-3.3.1.min.js"></script>
+  
+      <script>
+        // Lắng nghe sự kiện submit của form
+        document.querySelector('form[name="frmthanhtoan"]').addEventListener('submit', function(event) {
+            // Ngăn chặn việc gửi form đi
+            event.preventDefault();
+    
+            // Lấy giá trị của các trường trong form
+            var nameInput = document.getElementById("kh_ten").value;
+            var genderInput = document.getElementById("kh_gioitinh").value;
+            var addressInput = document.getElementById("kh_diachi").value;
+            var phoneInput = document.getElementById("kh_dienthoai").value;
+            var emailInput = document.getElementById("kh_email").value;
+            var accountNumberInput = document.getElementById("kh_sotaikhoan").value;
+            var idCardInput = document.getElementById("kh_cmnd").value;
+            var paymentMethod = document.querySelector('input[name="httt_ma"]:checked');
+    
+            // Kiểm tra xem tất cả các trường bắt buộc đã được điền đầyđủ chưa
+            if (
+                nameInput === "" ||
+                genderInput === "" ||
+                addressInput === "" ||
+                phoneInput === "" ||
+                emailInput === "" ||
+                accountNumberInput === "" ||
+                idCardInput === "" ||
+                paymentMethod === null
+            ) {
+                // Nếu có trường bắt buộc chưa điền đầy đủ, hiển thị thông báo
+                alert("Vui lòng điền đầy đủ thông tin.");
+            } else {
+                // Nếu tất cả các trường bắt buộc đã được điền đầy đủ, hiển thị thông báo thành công
+                alert("Thanh toán thành công!");
+            }
+        });
+    </script>   
+  <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
   <script src="js/popper.min.js"></script>

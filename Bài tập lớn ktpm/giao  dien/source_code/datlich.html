@@ -90,7 +90,7 @@
 		  </div>
 		</div>
 
-		<div class="site-blocks-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+		<div class="site-blocks-cover overlay" style="background-image: url(images/car.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
 			<div class="container">
 			  <div class="row align-items-center justify-content-center">
 				<div class="col-md-7 text-center" data-aos="fade">
@@ -102,44 +102,44 @@
 		  </div>  
 	<div>
 		
-		<form id="bookingForm">
-			<label for="bookingName">Họ tên:</label>
-			<input type="text" id="bookingName" name="bookingName" required>
+		<form id="Form">
+			<label for="Name">Họ tên:</label>
+			<input type="text" id="Name" name="Name" required>
 			
-			<label for="bookingEmail">Email:</label>
-			<input type="email" id="bookingEmail" name="bookingEmail" required>
+			<label for="Email">Email:</label>
+			<input type="email" id="Email" name="Email" required>
 			
-			<label for="bookingPhone">Số điện thoại:</label>
-			<input type="tel" id="bookingPhone" name="bookingPhone" required>
+			<label for="Phone">Số điện thoại:</label>
+			<input type="tel" id="Phone" name="Phone" required>
 			
-			<label for="bookingLicensePlate">Biển số xe:</label>
-			<input type="text" id="bookingLicensePlate" name="bookingLicensePlate" required>
+			<label for="LicensePlate">Biển số xe:</label>
+			<input type="text" id="LicensePlate" name="LicensePlate" required>
 			
-			<label for="bookingLicensePlateColor">Màu biển số xe:</label>
+			<label for="LicensePlateColor">Màu biển số xe:</label>
 			<div class="checkbox-group">
 				<div class="custom-control custom-radio">
-					<input id="bookingHttt-1" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="1">
-					<label class="custom-control-label" for="bookingHttt-1"><span class="white">Trắng</span></label>
+					<input id="Httt-1" name="HtttMa" type="radio" class="custom-control-input" required="" value="1">
+					<label class="custom-control-label" for="Httt-1"><span class="white">Trắng</span></label>
 				</div>
 				<div class="custom-control custom-radio">
-					<input id="bookingHttt-2" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="2">
-					<label class="custom-control-label" for="bookingHttt-2"><span class="blue">Xanh</span></label>
+					<input id="Httt-2" name="HtttMa" type="radio" class="custom-control-input" required="" value="2">
+					<label class="custom-control-label" for="Httt-2"><span class="blue">Xanh</span></label>
 				</div>
 				<div class="custom-control custom-radio">
-					<input id="bookingHttt-3" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="3">
-					<label class="custom-control-label" for="bookingHttt-3"><span class="yellow">Vàng</span></label>
+					<input id="Httt-3" name="HtttMa" type="radio" class="custom-control-input" required="" value="3">
+					<label class="custom-control-label" for="Httt-3"><span class="yellow">Vàng</span></label>
 				</div>
 				<div class="custom-control custom-radio">
-					<input id="bookingHttt-4" name="bookingHtttMa" type="radio" class="custom-control-input" required="" value="4">
-					<label class="custom-control-label" for="bookingHttt-4"><span class="red">Đỏ</span></label>
+					<input id="Httt-4" name="HtttMa" type="radio" class="custom-control-input" required="" value="4">
+					<label class="custom-control-label" for="Httt-4"><span class="red">Đỏ</span></label>
 				</div>
 			</div>
 		
-			<label for="bookingExpirationDate">Ngày hết hạn đăng kiểm:</label>
-			<input type="date" id="bookingExpirationDate" name="bookingExpirationDate" required placeholder="">
+			<label for="ExpirationDate">Ngày hết hạn đăng kiểm:</label>
+			<input type="date" id="ExpirationDate" name="ExpirationDate" required placeholder="">
 		
-			<label for="bookingVehicleType">Loại phương tiện:</label>
-			<select id="bookingVehicleType" name="bookingVehicleType">
+			<label for="VehicleType">Loại phương tiện:</label>
+			<select id="VehicleType" name="VehicleType">
 				<option value="oto">Ô tô</option>
 				<option value="other">Phương tiện khác</option>
 			</select>
@@ -233,8 +233,8 @@
     });
 </script>
 
-			<label for="bookingAppointmentDate">Ngày hẹn:</label>
-			<input type="date" id="bookingAppointmentDate" name="bookingAppointmentDate" required placeholder="">
+			<label for="AppointmentDate">Ngày hẹn:</label>
+			<input type="date" id="AppointmentDate" name="AppointmentDate" required placeholder="">
 		
 			<label for="appointmentTime">Giờ hẹn:</label>
 			<input type="time" id="appointmentTime" name="appointmentTime" required placeholder="">
@@ -320,12 +320,12 @@
 			event.preventDefault(); // Ngăn chặn việc gửi form đi mặc định
 	
 			// Kiểm tra các trường thông tin
-			var name = document.getElementById('bookingName').value;
-			var email = document.getElementById('bookingEmail').value;
-			var phone = document.getElementById('bookingPhone').value;
-			var licensePlate = document.getElementById('bookingLicensePlate').value;
-			var licensePlateColor = document.querySelector('input[name="bookingHtttMa"]:checked');
-			var expirationDate = document.getElementById('bookingExpirationDate').value;
+			var name = document.getElementById('Name').value;
+			var email = document.getElementById('Email').value;
+			var phone = document.getElementById('Phone').value;
+			var licensePlate = document.getElementById('LicensePlate').value;
+			var licensePlateColor = document.querySelector('input[name="HtttMa"]:checked');
+			var expirationDate = document.getElementById('ExpirationDate').value;
 	
 			// Kiểm tra xem có trường thông tin nào chưa được nhập
 			if (name === '' || email === '' || phone === '' || licensePlate === '' || licensePlateColor === null || expirationDate === '') {
